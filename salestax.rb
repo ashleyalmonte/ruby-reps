@@ -6,8 +6,7 @@ def tax(num)
     puts "please enter a valid number"
     return
   end
-end
-
+  
 def main()
   puts "Enter a enter number to find the tax"
   num1 = gets.chomp.to_f
