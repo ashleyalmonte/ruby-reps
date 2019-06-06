@@ -1,14 +1,21 @@
-def repeated_letters(str)
-    count = {}
-    arr = str.split
-    for x in arr
-        if count.has_key?(x)
-            count[x] += 1
-        else
-            count[x] = 1 unless x ==
-        end
+puts "Enter a string you want"
+$string = gets.chomp.downcase.split()
+$ALPHABETS = []
+$string.each do |alphabet|
+  $ALPHABETS << alphabet.split('')
+end
+$ALPHABETS = $ALPHABETS.flatten
+$frequent
+def count_instance()
+  uniq_char = $ALPHABETS.uniq
+  number = 0
+  uniq_char.each do |character|
+    if $ALPHABETS.count(character) > number
+      number = $ALPHABETS.count(character)
+      $frequent = character
     end
-    count.key(count.values.max)
+  end
+  puts $frequent
 end
 
-p find_letter(‘Bob is a very nice gardener’.downcase)
+count_instance
